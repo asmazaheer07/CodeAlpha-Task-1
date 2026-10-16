@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Atelier — Art Gallery </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- هدر موزه‌ای -->
+    <header class="museum-header">
+        <div class="header-top">
+            <!-- <span class="est">EST. 2026</span> -->
+            <span class="location">KABUL · AFGHANISTAN</span>
+        </div>
+        <div class="header-center">
+            <h1>The Atelier</h1>
+            <p class="subtitle">A Curated Collection of Fine Art</p>
+        </div>
+        <div class="header-divider">
+            <span></span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M12 2L12 22M2 12L22 12"/>
+            </svg>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- یادداشت کیوریتور -->
+    <section class="curator-note">
+        <p><em>"Art is not what you see, but what you make others see."</em></p>
+        <span>— Edgar Degas</span>
+    </section>
+
+    <!-- فیلتر سبک‌ها -->
+    <nav class="filter-nav">
+        <button class="active" data-filter="all">All Works</button>
+        <button data-filter="portrait">Portraits</button>
+        <button data-filter="landscape">Landscapes</button>
+        <button data-filter="abstract">Abstract</button>
+        <button data-filter="still-life">Still Life</button>
+    </nav>
+
+    <!-- گالری نقاشی -->
+    <main class="gallery-grid">
+        
+        <figure class="artwork" data-category="portrait">
+            <div class="frame">
+                <img src="https://i.pinimg.com/1200x/97/ca/c7/97cac7492bd7b83fc42eb849fe677302.jpg" alt="Portrait of a Lady">
+            </div>
+            <figcaption>
+                <h3>Portrait of a Lady</h3>
+                <p>Oil on Canvas</p>
+            </figcaption>
+        </figure>
+
+        <figure class="artwork" data-category="landscape">
+            <div class="frame">
+                <img src="https://i.pinimg.com/736x/c4/8b/a3/c48ba3de984a816aee1a63c6db0c7ebe.jpg" alt="The Silent Valley">
+            </div>
+            <figcaption>
+                <h3>The Silent Valley</h3>
+                <p>Watercolor</p>
+            </figcaption>
+        </figure>
+
+        <figure class="artwork" data-category="abstract">
+            <div class="frame">
+                <img src="https://i.pinimg.com/1200x/c6/58/e6/c658e67a329cee0a71f9568f3160ce91.jpg" alt="Composition No. 7">
+            </div>
+            <figcaption>
+                <h3> Van-o-Gogh</h3>
+                <p>Oil on Canvas</p>
+            </figcaption>
+        </figure>
+
+        <figure class="artwork" data-category="still-life">
+            <div class="frame">
+                <img src="https://i.pinimg.com/736x/04/c7/2a/04c72ababa839944ad79045e0a7e7b73.jpg" alt="Fruits & Vase">
+            </div>
+            <figcaption>
+                <h3>Sketchbook</h3>
+                <p>Pencil & sketch</p>
+            </figcaption>
+        </figure>
+
+        <figure class="artwork" data-category="landscape">
+            <div class="frame">
+                <img src="https://i.pinimg.com/1200x/44/e3/61/44e3612f33f6775b6e209134c6d1714d.jpg" alt="Misty Peaks">
+            </div>
+            <figcaption>
+                <h3>Clouds</h3>
+                <p>Dry color on Canvas</p>
+            </figcaption>
+        </figure>
+
+        <figure class="artwork" data-category="portrait">
+            <div class="frame">
+                <img src="https://i.pinimg.com/736x/6c/18/ec/6c18ec87a7e40dee244ce1c67507a563.jpg" alt="The Thinker">
+            </div>
+            <figcaption>
+                <h3>The artist</h3>
+                <p>an artist vibe</p>
+            </figcaption>
+        </figure>
+
+        <figure class="artwork" data-category="abstract">
+            <div class="frame">
+                <img src="https://i.pinimg.com/736x/0e/bc/0c/0ebc0c700556ceb0dad79e3b6a7a64ef.jpg" alt="Golden Hour">
+            </div>
+            <figcaption>
+                <h3>Golden Hour</h3>
+                <p>Acrylic</p>
+            </figcaption>
+        </figure>
+
+        <figure class="artwork" data-category="still-life">
+            <div class="frame">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=800&auto=format&fit=crop" alt="Study of Roses">
+            </div>
+            <figcaption>
+                <h3>Study of Roses</h3>
+                <p>Pastel</p>
+            </figcaption>
+        </figure>
+
+    </main>
+
+    <!-- فوتر -->
+    <footer class="museum-footer">
+        <p>© 2026 The Atelier · An Art Gallery</p>
+    </footer>
+
+    <!-- لایت‌باکس نمایشگاهی -->
+    <div class="lightbox" id="lightbox">
+        <button class="lb-close" aria-label="Close">✕</button>
+        <button class="lb-prev" aria-label="Previous">‹</button>
+        
+        <div class="lb-stage">
+            <div class="lb-frame">
+                <img src="" alt="" class="lb-img">
+            </div>
+            <div class="lb-info">
+                <div class="lb-line"></div>
+                <h2 class="lb-title"></h2>
+                <p class="lb-meta"></p>
+                <span class="lb-no"></span>
+            </div>
+        </div>
+        
+        <button class="lb-next" aria-label="Next">›</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
